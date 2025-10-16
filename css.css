@@ -1,0 +1,384 @@
+/* Billede baggrund */
+body {
+    background-image: url('../Images/Fiskebaggrund1.png'); 
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 400vh;
+}
+
+/* Ikonerne i headeren */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left-icons {
+    display: flex;
+}
+
+.right-icons {
+    display: flex;
+    gap: 30px;
+}
+
+/* home icon */
+.icon {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+/* info icon */
+.iconinfo {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.iconinfo:hover {
+    transform: scale(1.2);
+}
+
+/* instillinger icon */
+.iconinstillinger {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.iconinstillinger:hover {
+    transform: scale(1.2);
+}
+
+/* FISK SEKTION */
+
+/* Fisk 1 */
+.swimming-fish {
+    position: absolute;
+    top: 50%;
+    left: -200px; /* Start udenfor skærmen til venstre */
+    z-index: 500; /* Sørg for at fisken er over baggrunden */
+    animation: swimAcross 20s infinite linear;
+    cursor: pointer;
+}
+
+.fish {
+    width: 180px;
+    height: auto;
+}
+
+/* Fisk 2 */
+.fish2 {
+    top: 80%;
+    animation: swimAcross 15s infinite linear;
+}
+
+.fish2 .fish {
+    width: 180px;
+}
+
+/* Fisk 3 */
+.fish3 {
+    top: 150%;
+    animation: swimAcross 28s infinite linear;
+}
+
+.fish3 .fish {
+    width: 180px;
+}
+
+/* Fisk 4 */
+.fish4 {
+    top: 200%;
+    animation: swimAcross 25s infinite linear;
+}
+
+.fish4 .fish {
+    width: 180px;
+}
+
+/* Fisk 5 */
+.fish5 {
+    top: 250%;
+    animation: swimAcross 20s infinite linear;
+}
+
+.fish5 .fish {
+    width: 180px;
+}
+
+/* Fisk 6 */
+.fish6 {
+    top: 300%;
+    animation: swimAcross 35s infinite linear;
+}
+
+.fish6 .fish {
+    width: 180px;
+}
+
+/* Fisk 7 */
+.fish7 {
+    top: 350%;
+    animation: swimAcross 40s infinite linear;
+}
+
+.fish7 .fish {
+    width: 180px;
+}
+
+/* Fisk 8 */
+.fish8 {
+    top: 300%;
+    animation: swimAcross 39s infinite linear;
+}
+
+.fish8 .fish {
+    width: 180px;
+}
+
+/* Fisk 9 */
+.fish9 {
+    top: 150%;
+    animation: swimAcross 22s infinite linear;
+}
+.fish9 .fish {
+    width: 180px;
+}
+
+/* Fisk 10 */
+.fish10 {
+    top: 220%;
+    animation: swimAcross 30s infinite linear;
+}
+.fish10 .fish {
+    width: 180px;
+}
+
+/* Fisk 11 */
+.fish11 {
+    top: 270%;
+    animation: swimAcross 25s infinite linear;
+}
+.fish11 .fish {
+    width: 180px;
+}
+
+/* Fisk 12 */
+.fish12 {
+    top: 320%;
+    animation: swimAcross 30s infinite linear;
+}
+.fish12 .fish {
+    width: 180px;
+}
+
+/* Fisk 13 */
+.fish13 {
+    top: 370%;
+    animation: swimAcross 28s infinite linear;
+}
+.fish13 .fish {
+    width: 180px;
+}
+
+/* Fisk 14 */
+.fish14 {
+    top: 400%;
+    animation: swimAcross 35s infinite linear;
+}
+.fish14 .fish {
+    width: 180px;
+}
+
+/* Fisk 15 */
+.fish15 {
+    top: 450%;
+    animation: swimAcross 40s infinite linear;
+}
+.fish15 .fish {
+    width: 180px;
+}
+
+/* Fisk 16 */
+.fish16 {
+    top: 500%;
+    animation: swimAcross 45s infinite linear;
+}
+.fish16 .fish {
+    width: 180px;
+}
+
+/* Fisk 17 */
+.fish17 {
+    top: 550%;
+    animation: swimAcross 50s infinite linear;
+}
+.fish17 .fish {
+    width: 180px;
+}
+
+/* Fisk 18 */
+.fish18 {
+    top: 600%;
+    animation: swimAcross 55s infinite linear;
+}
+.fish18 .fish {
+    width: 180px;
+}
+
+/* Fisk 19 */
+.fish19 {
+    top: 20%;
+    animation: swimAcross 30s infinite linear;
+}
+.fish19 .fish {
+    width: 180px;
+}
+
+/* Fisk 20 */
+.fish20 {
+    top: 60%;
+    animation: swimAcross 35s infinite linear;
+}
+.fish20 .fish {
+    width: 180px;
+}
+
+/* Fisk 21 */
+.fish21 {
+    top: 125%;
+    animation: swimAcross 25s infinite linear;
+}
+.fish21 .fish {
+    width: 180px;
+}
+
+/* Animation for at svømme på tværs af skærmen */
+@keyframes swimAcross {
+    0% {
+        left: -200px; /* Starter til venstre uden for skærmen */
+        transform: scaleX(1); /* Normal retning */
+    }
+    50% {
+        left: calc(100vw + 200px); /* Går til højre uden for skærmen */
+        transform: scaleX(1);
+    }
+    51% {
+        transform: scaleX(-1); /* Vender om */
+    }
+    100% {
+        left: -200px; /* Tilbage til start */
+        transform: scaleX(-1); /* Stadig vendt om */
+    }
+}
+
+/* Dykker animation */
+.diver {
+    position: absolute;
+    left: 70%; /* Fast position fra venstre */
+    top: -100px; /* Starter over skærmen */
+    z-index: 600; /* over fiskene */
+    animation: dive 100s infinite linear;
+    cursor: pointer;
+}
+
+.diver-img {
+    width: 200px;
+    height: auto;
+}
+
+/* Dykke animation - bevægelse op og ned */
+@keyframes dive {
+    0% {
+        top: 100px; /* Starter over skærmen */
+    }
+    45% {
+        top: 550vh; /* Dykker ned til bunden */
+    }
+     50% {
+        top: 550vh; /* Pause ved bunden */
+    }
+    95% {
+        top: 100px; /* Tilbage til toppen */
+    }
+    100% {
+        top: 100px; /* Klar til ny dykke */
+    }
+}
+        
+
+/* INFOBOKSE */
+
+/* Infoboks styling */
+.info-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Billede af fanget fisk */
+.caught-fish-image {
+    width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Opdater info-content for bedre layout */
+.info-content {
+    background-color: rgb(255, 247, 239);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info-content h3 {
+    margin-top: 10px;
+    color: #ff9812;
+}
